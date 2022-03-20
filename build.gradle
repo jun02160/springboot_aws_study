@@ -20,6 +20,7 @@ group 'jun.spring'
 version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
+
 repositories {
     mavenCentral()
     jcenter()
@@ -28,4 +29,16 @@ repositories {
 dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
+    
+    // lombok plugin
+    annotationProcessor ('org.projectlombok:lombok:1.18.22')
+    implementation('org.projectlombok:lombok:1.18.22')
+    // test 환경
+    testImplementation('org.projectlombok:lombok:1.18.22')
 }
+
+/*configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}*/

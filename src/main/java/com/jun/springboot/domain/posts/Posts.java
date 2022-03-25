@@ -1,6 +1,5 @@
 package com.jun.springboot.domain.posts;
 
-// Annotation을 위한 import문
 // lombok
 import lombok.Builder;
 import lombok.Getter;

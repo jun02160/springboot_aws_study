@@ -35,6 +35,10 @@ dependencies {
     implementation('org.projectlombok:lombok:1.18.22')
     // test 환경
     testImplementation('org.projectlombok:lombok:1.18.22')
+
+    // Spring Data JPA
+    implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+    implementation('com.h2database:h2')
 }
 
 /*configurations {

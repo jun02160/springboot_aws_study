@@ -14,7 +14,7 @@ import javax.persistence.Id;
 // JPA
 @Getter
 @NoArgsConstructor
-@Entity    // ÇÊ¼ö ¾î³ëÅ×ÀÌ¼ÇÀ» Å¬·¡½º¿Í °¡±õ°Ô À§Ä¡
+@Entity    // í•„ìˆ˜ ì–´ë…¸í…Œì´ì…˜ì„ í´ë˜ìŠ¤ì™€ ê°€ê¹ê²Œ ìœ„ì¹˜
 public class Posts {
 
     @Id
@@ -34,5 +34,11 @@ public class Posts {
         this.title = title;
         this.content = content;
         this.author = author;
+    }
+    
+    // Posts ìˆ˜ì • API
+    public void update(String title, String content) {
+        this.title = title;
+        this.content = content;
     }
 }

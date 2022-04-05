@@ -32,7 +32,6 @@ var main = {
             alert(JSON.stringify(error));
         })
     },
-
     update : function () {
         var data = {
             title: $('#title').val(),
@@ -54,13 +53,12 @@ var main = {
             alert(JSON.stringify(error));
         });
     },
-
     delete : function () {
         var id = $('#id').val();
 
         $.ajax({
             type: 'DELETE',
-            url: '/api/v1/post/' + id,
+            url: 'api/v1/post/' + id,
             dataType: 'json',
             contentType: 'application/json; charset=utf-8'
         }).done(function() {

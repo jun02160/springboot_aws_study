@@ -42,6 +42,10 @@ dependencies {
 
     // mustache
     implementation('org.springframework.boot:spring-boot-starter-mustache');
+
+    // Spring Security
+    implementation('org.springframework.boot:spring-boot-starter-oauth2-client');
+    implementation('org.springframework.boot:spring-boot-starter-security');
 }
 
 /*configurations {

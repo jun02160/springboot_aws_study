@@ -20,7 +20,9 @@ public class IndexController {
 
     @GetMapping("/")    // 머스테치에 url 매핑 (바로 보이는 main화면에 게시글 전체 조회 화면 띄우도록 재설정)
     public String index(Model model, @LoginUser SessionUser user) {
+
         model.addAttribute("posts", postsService.findAllDesc());
+
         if (user != null) {
             model.addAttribute("userName", user.getName());   // 로그인 성공 시 SessionUser 저장
         }
